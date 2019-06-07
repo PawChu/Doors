@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<!--doors-->
+	<div class="container doors" style="background-image: url(bg3.jpg); height: 800px; background-size: 100% 100%;">
+		<img src="door.png" class="w-25 door" style="margin-left: 50px; margin-top: 250px; position: absolute;">
+		<img src="door2.png" class="w-25 door2" style="margin-left: 400px; margin-top: 50px; position: absolute;">
+		<img src="door3.png" class="w-25 door3" style="margin-left: 750px; margin-top: 20px; position: absolute;">
+	</div>
+
+
+	<!--Хогвартс-->
+	<div style="background-image: url(bg.jpg); height: 800px; background-size: 100% 100%; display: none;" class="school">
+		<h1 class="text-white ml-3">Помогите Гарри найти палочку, плащ и метлу!</h1>
+		<h2 class="text-white ml-3 score_text">0</h2>
+		<button class="btn btn-success ml-3">Выйти из игры</button>
+		<img src="palochka.png" style="width: 100px; margin-left: 200px; margin-top: 500px; position: absolute;" class="palka">
+		<img src="metla.png" style="width: 100px; margin-left: 700px; margin-top: 300px; position: absolute;" class="metla">
+		<img src="mantiya.png" style="width: 100px; margin-left: 100px; margin-top: 200px; position: absolute;" class="plash">
+		<img src="ring.png" style="width: 100px; margin-left: 500px; margin-top: 100px; position: absolute;" class="ring">
+		<img src="gun.png" style="width: 200px; margin-left: 300px; margin-top: 350px; position: absolute;" class="gun">
+	</div>
+
+
+
+	<!--forest-->
+	<div style="background-image: url(forest.jpg); height: 800px; background-size: 100% 100%; display: none;" class="forest">
+		<h1 class="text-white ml-3">Гарри не может найти свою сову, где она?</h1>
+		<button class="btn btn-success ml-3 btn2">Выйти из игры</button>
+		<img src="owl.png" style="width: 200px; margin-left: 600px; position: absolute;" class="owl">
+		<img src="cat.png" style="width: 200px; margin-left: 200px; margin-top: 400px; position: absolute;" class="cat">
+		<img src="crow.png" style="width: 200px; margin-left: 150px; margin-top: 50px; position: absolute;" class="crow">
+	</div>
+
+
+
+	<!--test-->
+	<div class="test" style="background-image: url(bg2.jpg); height: 800px; background-size: 100% 100%; display: none;">
+		<h2 class="text-white ml-3 score_text2">5</h2>
+		<button class="btn btn-success ml-3 btn3">Выйти из теста</button>
+		<div class="t1">
+			<h1 class="text-center">Когда была опубликована книга Гарри Поттера?</h1>
+			<h4 class="border o1 bg-light text-center container text-muted" style="width: 500px;">1989 году</h4>
+			<h4 class="border o2 bg-light text-center container text-muted" style="width: 500px;">2001 году</h4>
+			<h4 class="border o3 bg-light text-center container text-muted" style="width: 500px;">1997 году</h4>
+			<div class="text-center"><img src="book.jpg" class="w-25"></div>
+		</div>
+		<div class="t2" style="display: none;">
+			<h1 class="text-center">Кто главный злодей?</h1>
+			<h4 class="border o4 bg-light text-center container text-muted" style="width: 500px;">Волан-де-Морт</h4>
+			<h4 class="border o5 bg-light text-center container text-muted" style="width: 500px;">Северус Снегг</h4>
+			<h4 class="border o6 bg-light text-center container text-muted" style="width: 500px;">Гарри Поттер</h4>
+		</div>
+		<div class="t3" style="display: none;">
+			<h1 class="text-center">Кто из них является лучшим другом Гарри Поттера?</h1>
+			<div class="text-center"><img src="germ.jpeg" style="height: 200px" class="o7">
+			<img src="drako.jpg" style="height: 200px" class="o8">
+			<img src="ron.jpeg" style="height: 200px" class="o9"></div>
+		</div>
+		<div class="t4" style="display: none;">
+			<h1 class="text-center">Чья эта волшебная палочка?</h1>
+			<div class="text-center"><img src="palkaalbus.jpg" style="height: 250px;"></div>
+			<h4 class="border o10 bg-light text-center container text-muted" style="width: 500px;">Гарри Поттера</h4>
+			<h4 class="border o11 bg-light text-center container text-muted" style="width: 500px;">Рубеуса Хагрида</h4>
+			<h4 class="border o12 bg-light text-center container text-muted" style="width: 500px;">Альбуса Дамблдора</h4>
+		</div>
+		<div class="t5" style="display: none;">
+			<h1 class="text-center">Что за заклинание?</h1>
+			<div class="text-center"><img src="lumos.gif" style="height: 250px;"></div>
+			<h4 class="border o13 bg-light text-center container text-muted" style="width: 500px;">Люмос</h4>
+			<h4 class="border o14 bg-light text-center container text-muted" style="width: 500px;">Левикорпус</h4>
+			<h4 class="border o15 bg-light text-center container text-muted" style="width: 500px;">Редукто</h4>
+		</div>
+		<div>
+			<h1 class="text-center prosh" style="display: none;">Ты уже прошел тест</h1>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript">
+		let score = 0;
+		let score2 = 5;
+
+
+
+		document.querySelector(".door").onclick = function(){
+			alert("Добро пожаловать в Хогвартс!")
+			document.querySelector(".doors").style.display = "none"
+			document.querySelector(".school").style.display = "block"
+		}
+
+		document.querySelector(".palka").onclick = function(){
+			document.querySelector(".palka").style.display = "none";
+			score = score + 1;
+			document.querySelector(".score_text").innerHTML = score
+		}
+		document.querySelector(".metla").onclick = function(){
+			document.querySelector(".metla").style.display = "none";
+			score = score + 1;
+			document.querySelector(".score_text").innerHTML = score
+		}
+		document.querySelector(".plash").onclick = function(){
+			document.querySelector(".plash").style.display = "none";
+			score = score + 1;
+			document.querySelector(".score_text").innerHTML = score
+		}
+		document.querySelector(".ring").onclick = function(){
+			alert("Не верно")
+		}
+		document.querySelector(".gun").onclick = function(){
+			alert("Не верно")
+		}
+		document.querySelector(".btn").onclick = function(){
+			document.querySelector(".school").style.display = "none"
+			document.querySelector(".doors").style.display = "block"
+		}
+
+
+
+		document.querySelector(".door2").onclick = function(){
+			alert("Вы попали в лес!")
+			document.querySelector(".doors").style.display = "none"
+			document.querySelector(".forest").style.display = "block"
+		}
+		document.querySelector(".owl").onclick = function(){
+			document.querySelector(".owl").style.display = "none"
+		}
+		document.querySelector(".cat").onclick = function(){
+			alert("Мяяу!")
+		}
+		document.querySelector(".crow").onclick = function(){
+			alert("Это не сова")
+		}
+		document.querySelector(".btn2").onclick = function(){
+			document.querySelector(".forest").style.display = "none"
+			document.querySelector(".doors").style.display = "block"
+		}
+
+
+
+		document.querySelector(".door3").onclick = function(){
+			alert("Ответьте на вопросы")
+			document.querySelector(".doors").style.display = "none"
+			document.querySelector(".test").style.display = "block"
+		}
+
+
+
+		document.querySelector(".o3").onclick = function(){
+			document.querySelector(".t1").style.display = "none"
+			document.querySelector(".t2").style.display = "block"
+			score2 = score2 - 1;
+			document.querySelector(".score_text2").innerHTML = score2
+		}
+		document.querySelector(".o1").onclick = function(){
+			alert("Не верно")
+		}
+		document.querySelector(".o2").onclick = function(){
+			alert("Не верно")
+		}
+
+
+		document.querySelector(".o4").onclick = function(){
+			document.querySelector(".t2").style.display = "none"
+			document.querySelector(".t3").style.display = "block"
+			score2 = score2 - 1;
+			document.querySelector(".score_text2").innerHTML = score2
+		}
+		document.querySelector(".o5").onclick = function(){
+			alert("Не верно")
+		}
+		document.querySelector(".o6").onclick = function(){
+			alert("Не верно")
+		}
+
+
+		document.querySelector(".o9").onclick = function(){
+			document.querySelector(".t3").style.display = "none"
+			document.querySelector(".t4").style.display = "block"
+			score2 = score2 - 1;
+			document.querySelector(".score_text2").innerHTML = score2
+		}
+		document.querySelector(".o8").onclick = function(){
+			alert("Не верно")
+		}
+		document.querySelector(".o7").onclick = function(){
+			alert("Не верно")
+		}
+
+
+		document.querySelector(".o12").onclick = function(){
+			document.querySelector(".t4").style.display = "none"
+			document.querySelector(".t5").style.display = "block"
+			score2 = score2 - 1;
+			document.querySelector(".score_text2").innerHTML = score2
+		}
+		document.querySelector(".o10").onclick = function(){
+			alert("Не верно")
+		}
+		document.querySelector(".o11").onclick = function(){
+			alert("Не верно")
+		}
+
+
+		document.querySelector(".o13").onclick = function(){
+			alert("Молодец, ты прошел тест!")
+			document.querySelector(".test").style.display = "none"
+			document.querySelector(".t5").style.display = "none"
+			document.querySelector(".prosh").style.display = "block"
+			document.querySelector(".doors").style.display = "block"
+			score2 = score2 - 1;
+			document.querySelector(".score_text2").innerHTML = score2
+		}
+		document.querySelector(".o14").onclick = function(){
+			alert("Не верно")
+		}
+		document.querySelector(".o15").onclick = function(){
+			alert("Не верно")
+		}
+
+
+		document.querySelector(".btn3").onclick = function(){
+			document.querySelector(".test").style.display = "none"
+			document.querySelector(".doors").style.display = "block"
+		}
+
+
+	</script>
+
+</body>
+</html>
